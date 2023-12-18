@@ -6,9 +6,10 @@ class Start
      
         double tax1 = t.getTax(12*35000);
         double tax2 = t.getTax(12*35000);
+        double tax3 = t.getTax(12*45000);
         System.out.println(tax1);
         System.out.println(tax2);
-        
+        System.out.println(tax3);
     }
 }
 
