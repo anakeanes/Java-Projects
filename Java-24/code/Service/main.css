@@ -1,0 +1,66 @@
+:root
+{
+    --brand-color: pink;
+    --brand-darker: hotpink;
+    --button-text-color: white;
+}
+
+
+body
+{
+    font-family: sans-serif;
+    color: #333;
+    font-size: 1.25rem;
+    min-height: 100dvh;
+}
+.container
+{
+    width: 96%;
+        max-width: 1024px;
+        margin: 0 auto;
+}
+header
+{
+    background: var(--brand-color);
+    min-height: 25rem;
+    
+}
+main
+{
+    min-height: calc(100dvh-37rem); /* 37=header + footer */
+        
+}
+footer
+{
+    background: #888;
+    min-height: 12rem;
+}
+button
+{
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    /* in short padding: .5rem 1rem; */
+    background: var(--button-text-color);
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: var(--brand-darker);
+    border: 0.1rem solid var(--brand-darker); /* in short way */
+    border-radius: 0.25rem;
+}
+.top-logo
+{
+    display: inline;
+}
+.top-menu
+{
+    display: none;
+}
+@media(min-width:480px)
+{
+    .top-menu
+    {
+        display: inline;
+    }
+}
