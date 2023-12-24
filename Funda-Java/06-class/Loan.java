@@ -33,8 +33,14 @@ public class Loan {
     public void setInterestRate( float interestRate){
         this.interestRate = interestRate; // Receive the value for modification
         // this is very famous method, we can create setter method and let the framework modify it on demand (we send/recieve values from frameworks by getter/setter only, not directly)
+        // example when Spring wants to export the value, it will come and look at the getter/setter method for display / make it JSON format
     }
 
+    //we can cast our own method
+    public double calculateInterest() {
+        return loanAmount * interestRate / 100;
+
+    }
 
     //if we don't want the output to be hashed, we use method "to String"
     //to notice method, we use modifier, "public", "private", "protected" for example
