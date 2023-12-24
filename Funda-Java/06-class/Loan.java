@@ -32,6 +32,7 @@ public class Loan {
     // start with the word "get" + variable's name (as Java is a camel case language, we have to start after "get" with capital letter)
     //**Caution, Always use the same type of variable to cast the get method. Example for interest rate which is float */
     public float getInterestRate () {
+        System.out.println("Loan::: getInterestRate()");
         return interestRate;
     
     }

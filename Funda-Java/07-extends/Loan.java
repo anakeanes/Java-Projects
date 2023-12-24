@@ -46,6 +46,7 @@ public class Loan {
     // we can cast our own method
     // we use this. for make sure to cast in the same covered bracket
     public double calculateInterest() {
+        System.out.println("Loan: calculateInterest()");
         return this.loanAmount * this.interestRate/ 100;
 
     }
