@@ -1,6 +1,6 @@
 //"Class should be a template, structure, or a bluprint of the object"
 
-private class Loan {
+public class Loan {
     // don't have to define public static void main
     // then we remove the value to make it as a blueprint
         private String applicantName;
@@ -17,6 +17,14 @@ private class Loan {
         this.interestRate = interestRate;
         //without any return type
         //this. is the value under the mentioned class (same class and the same method name)
+    }
+    
+    // create "getter" function (or getter method in java)
+    // start with the word "get" + variable's name (as Java is a camel case language, we have to start after "get" with capital letter)
+    //**Caution, Always use the same type of variable to cast the get method. Example for interest rate which is float */
+    public float getInterestRate () {
+        return interestRate;
+
     }
     
     //if we don't want the output to be hashed, we use method "to String"

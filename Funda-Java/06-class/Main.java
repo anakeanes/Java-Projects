@@ -49,6 +49,10 @@ public class Main {
         //So now we will use the "Constructor Method" instead
         Loan john = new Loan("John", 20000.0d, 8.5f);
         System.out.println(john);
+        //as we changed the modifier from public to private, we can no longer modify the value via john.applicantname, not even print it out
+        //So if we want to do something with John's stuff, we use getter method/ getter function
+        //john.getInterestRate is an "instance"
+        System.out.println(john.getInterestRate());
         
         System.out.println("---------------------------");
 
