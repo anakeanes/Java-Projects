@@ -36,9 +36,10 @@ public class Loan {
         // example when Spring wants to export the value, it will come and look at the getter/setter method for display / make it JSON format
     }
 
-    //we can cast our own method
+    // we can cast our own method
+    // we use this. for make sure to cast in the same covered bracket
     public double calculateInterest() {
-        return loanAmount * interestRate / 100;
+        return this.loanAmount * this.interestRate/ 100;
 
     }
 
