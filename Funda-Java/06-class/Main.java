@@ -29,10 +29,11 @@ public class Main {
 
         //call function to use, use command "new"
         //"new" is use to class the instance
-        Loan john = new Loan();
+        //Loan john = new Loan();
         // the output will comeout "Loan@hashed_object"
         //we don't have to comply the class "Loan", if you comply main, it will comply to the related class automatically
-        john.applicantName = "John";
+        //Modify the value manually might cause errors
+        /*john.applicantName = "John";
         john.loanAmount = 20000.0d;
         john.interestRate = 8.5f;
         System.out.println(john); 
@@ -43,7 +44,16 @@ public class Main {
         System.out.println(laumcing);
         laumcing.applicantName = "Laumcing";
         laumcing.loanAmount = 10000.0d;
-        laumcing.interestRate = 7.5f;
+        laumcing.interestRate = 7.5f; */
+
+        //So now we will use the "Constructor Method" instead
+        Loan john = new Loan("John", 20000.0d, 8.5f);
+        System.out.println(john);
+        
+        System.out.println("---------------------------");
+
+        Loan laumcing = new Loan("Laumcing", 10000.0d, 7.5f);
+        System.out.println(laumcing);
     }
 
 }
