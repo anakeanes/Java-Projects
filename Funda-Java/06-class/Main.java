@@ -62,6 +62,11 @@ public class Main {
 
         Loan laumcing = new Loan("Laumcing", 10000.0d, 7.5f);
         System.out.println(laumcing);
+        
+        System.out.println("---------------------------");
+        
+        Loan laumcing2 = new Loan("Laumcing2");
+        System.out.println(laumcing2);
     }
 
 }

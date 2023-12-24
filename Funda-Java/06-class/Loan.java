@@ -9,6 +9,13 @@ public class Loan {
 
     // Blank class like this can be used as a blueprint, can be called *Hojo class* or Record class
 
+    // In case we want to modify the constructor style (inside structure, ex. just only want the name(String), no loger want the numbers (doubel/float from loanAmount, interestRate) )
+    // Can be the same name ** but different parameters
+    // that will make one method/function can stored the data in many styles
+    // this is called "overloaded" constructor
+    public Loan (String applicantName) {
+        this.applicantName = applicantName;
+}
 
     //So now we will use the "Constructor Method" instead
     //"Constructor method" is a method that have the exact same name with class's name
