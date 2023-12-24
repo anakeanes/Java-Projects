@@ -56,7 +56,7 @@ public class Main {
         //setter method is used to modify the value in the private class
         john.setInterestRate(9.5f); // make sure that you have casted the instance of set method in the private class before calling it
         System.out.println("John's modified interest rate: " + john.getInterestRate());
-        System.out.println("Interest Amount:" + john.calculateInterest());
+        System.out.println("Interest Amount:" + john.cal());
         
         System.out.println("---------------------------");
 

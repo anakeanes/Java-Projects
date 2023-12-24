@@ -42,6 +42,10 @@ public class Loan {
         return this.loanAmount * this.interestRate/ 100;
 
     }
+    //let's call the function/method that we have defined. Actaully we don't have to call it if it can be called from the outside. Just in case it cannot be called from the outside
+    public double cal() {
+        return calculateInterest();
+    }
 
     //if we don't want the output to be hashed, we use method "to String"
     //to notice method, we use modifier, "public", "private", "protected" for example
