@@ -62,5 +62,13 @@ public class Mortgage extends Loan {
     /*public String toString() {
         return "Applicant Name: " + applicantName + "\nLoan Amount: " + loanAmount +"\nInterest Rate: " + interestRate;
     }*/
+    
+    // this is called overriding method, is the method that replace the parent's method
+    @Override
+    public double calculateInterest() {
+        System.out.println("Mortgage: calculateInterest()");
+        return 3.4d;
+
+    }
 }
 

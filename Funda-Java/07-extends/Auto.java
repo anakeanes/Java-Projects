@@ -11,7 +11,13 @@ public class Auto extends Loan{
         super(applicantName, loanAmount, interestRate);
     }
     
-   
+
+    // this is called overriding method, is the method that replace the parent's method
+    @Override
+    public double calculateInterest() {
+        System.out.println("Auto: calculateInterest()");
+        return 5.5d;
+    }
 
 }
 
