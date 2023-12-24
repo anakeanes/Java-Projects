@@ -7,6 +7,8 @@ public class Loan {
         private double loanAmount;
         private float interestRate;
 
+    // Blank class like this can be used as a blueprint, can be called *Hojo class* or Record class
+
 
     //So now we will use the "Constructor Method" instead
     //"Constructor method" is a method that have the exact same name with class's name
@@ -24,9 +26,16 @@ public class Loan {
     //**Caution, Always use the same type of variable to cast the get method. Example for interest rate which is float */
     public float getInterestRate () {
         return interestRate;
-
-    }
     
+    }
+    // method like this can be called "behavior"
+    // Another one is "setter" method is use to modify the value in the private class (a class that cannot be modified directly from outside of the class)
+    public void setInterestRate( float interestRate){
+        this.interestRate = interestRate; // Receive the value for modification
+        // this is very famous method, we can create setter method and let the framework modify it on demand (we send/recieve values from frameworks by getter/setter only, not directly)
+    }
+
+
     //if we don't want the output to be hashed, we use method "to String"
     //to notice method, we use modifier, "public", "private", "protected" for example
     public String toString() {

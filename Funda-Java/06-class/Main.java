@@ -52,7 +52,10 @@ public class Main {
         //as we changed the modifier from public to private, we can no longer modify the value via john.applicantname, not even print it out
         //So if we want to do something with John's stuff, we use getter method/ getter function
         //john.getInterestRate is an "instance"
-        System.out.println(john.getInterestRate());
+
+        //setter method is used to modify the value in the private class
+        john.setInterestRate(9.5f); // make sure that you have casted the instance of set method in the private class before calling it
+        System.out.println("John's modified interest rate: " + john.getInterestRate());
         
         System.out.println("---------------------------");
 
