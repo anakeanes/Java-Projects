@@ -1,6 +1,6 @@
 //"Class should be a template, structure, or a bluprint of the object"
 
-public class Loan {
+private class Loan {
     // don't have to define public static void main
     // then we remove the value to make it as a blueprint
         String applicantName;
