@@ -1,0 +1,5 @@
+Java has 4 ways if object oriented (OOPs)
+    1. Inheritance - extends การสืบทอดพฤติกรรมมาจากที่อื่น / interface - การนิยามพฤติกรรม
+    2. Abstraction
+    3. Polymorphism
+    4. Encapsulation
