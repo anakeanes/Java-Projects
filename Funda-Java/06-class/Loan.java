@@ -3,9 +3,9 @@
 private class Loan {
     // don't have to define public static void main
     // then we remove the value to make it as a blueprint
-        String applicantName;
-        double loanAmount;
-        float interestRate;
+        private String applicantName;
+        private double loanAmount;
+        private float interestRate;
 
 
     //So now we will use the "Constructor Method" instead
