@@ -30,14 +30,20 @@ public class Main {
         //call function to use, use command "new"
         //"new" is use to class the instance
         Loan john = new Loan();
-        System.out.println(john); // the output will comeout "Loan@hashed_object"
+        // the output will comeout "Loan@hashed_object"
         //we don't have to comply the class "Loan", if you comply main, it will comply to the related class automatically
+        john.applicantName = "John";
+        john.loanAmount = 20000.0d;
+        john.interestRate = 8.5f;
+        System.out.println(john); 
         
         System.out.println();
         
         Loan laumcing = new Loan();
         System.out.println(laumcing);
-
+        laumcing.applicantName = "Laumcing";
+        laumcing.loanAmount = 10000.0d;
+        laumcing.interestRate = 7.5f;
     }
 
 }
