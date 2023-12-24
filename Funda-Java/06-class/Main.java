@@ -64,9 +64,10 @@ public class Main {
         System.out.println(laumcing);
         
         System.out.println("---------------------------");
-        
+
         Loan laumcing2 = new Loan("Laumcing2");
-        System.out.println(laumcing2);
+        System.out.println(laumcing2); // try overloading constructor
+        System.out.println("Laumcing2's Interest is: " + laumcing2.cal(10000.0d,7.5f)); //try overloadinfg method
     }
 
 }

@@ -11,7 +11,7 @@ public class Loan {
 
     // In case we want to modify the constructor style (inside structure, ex. just only want the name(String), no loger want the numbers (doubel/float from loanAmount, interestRate) )
     // Can be the same name ** but different parameters
-    // that will make one method/function can stored the data in many styles
+    // that will make one constructor can stored the data in many styles
     // this is called "overloaded" constructor
     public Loan (String applicantName) {
         this.applicantName = applicantName;
@@ -52,6 +52,11 @@ public class Loan {
     //let's call the function/method that we have defined. Actaully we don't have to call it if it can be called from the outside. Just in case it cannot be called from the outside
     public double cal() {
         return calculateInterest();
+    }
+
+    //overloading method
+    public double cal(double amount, float rate) {
+        return amount * rate / 100;
     }
 
     //if we don't want the output to be hashed, we use method "to String"
