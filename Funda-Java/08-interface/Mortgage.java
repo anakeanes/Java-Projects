@@ -12,4 +12,13 @@ public class Mortgage implements Loan {
         this.loanAmount = loanAmount;
         this.interestRate = interestRate;
     }
+    @Override
+    public double calculateInterest() {
+        System.out.println( "Mortgage: calculateInterest()");
+        return 3.4d;
+    }
+    @Override
+    public String toString() {
+        return "Applicant Name: " + applicantName + "\nLoan Amount: " + loanAmount + "\nInterest Rate: " + interestRate;
+    }
 }
